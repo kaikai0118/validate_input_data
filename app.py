@@ -18,7 +18,7 @@ def handle_form():
     if len(id_number)!=10:
         return "身分證號碼應該為10碼", 400
         
-        first_char = nid[0].upper()
+        first_char =  id_number[0].upper()
     if not first_char.isalpha() or first_char < 'A' or first_char > 'Z':
         return False, "身份證號碼第一個字元應為英文字母"
 
